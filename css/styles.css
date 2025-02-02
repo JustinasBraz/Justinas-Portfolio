@@ -17,6 +17,7 @@ body {
     font-family: 'Open Sans, sans-serif';
     line-height: 1.6;
     scroll-behavior: smooth;
+    
 }
 
 a {
@@ -33,9 +34,11 @@ img {
 }
 /* Utility Classes */
 .container {
+    width: 80%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 2rem;
+    
 }
 
 .container-sm {
@@ -227,7 +230,7 @@ position: relative;
 }
 
 .hero h1 {
-    color:var(--dark-color);
+    color: var(--dark-color);
     font-size: 3.5rem;
     line-height: 1.2;
     font-weight: 700;
@@ -270,8 +273,8 @@ position: relative;
 
 .project-cards img {
     width: 300px;
-    max-width: 500px;
     margin-top: 1rem;
+    
 }
 
 .project-cards h3 {
@@ -439,6 +442,11 @@ position: relative;
   .contact-form textarea {
     display: block;
     font-family: inherit;
+    font-size: medium;
+    width: 100%;
+    margin: 1.5rem 0;
+    border: 1px solid #ccc;
+    padding: 1.2rem 1rem;
   }
   
   .contact-form .textarea {
@@ -486,7 +494,7 @@ position: relative;
 
 /*Media Queries*/
 
-@media (max-width:1200px) {
+@media (max-width: 1200px) {
     .hero .hero-flex {
         gap: 2rem;
      }   
@@ -499,12 +507,17 @@ position: relative;
      }
       
       
-     
-}
+     .project-cards .container{
+       grid-template-columns: 1fr;
+     }
+     .footer-flex {
+        flex-direction: column;
+    text-align: center;
 
+     }
+    }
 
-
-@media (max-width:992px) {
+@media (max-width: 992px) {
 
     .hero {
         text-align: center;
@@ -610,7 +623,6 @@ position: relative;
     grid-template-columns: 1fr;
  }
  
-
 
 
 
