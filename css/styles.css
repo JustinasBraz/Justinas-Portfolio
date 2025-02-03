@@ -42,6 +42,7 @@ img {
 }
 
 .container-sm {
+
     max-width: 1000px;
     margin: 0 auto;
     padding: 0 2rem;
@@ -64,6 +65,7 @@ img {
     border:  1px solid;
     color:#fff;
     border-color: #fff;
+    transition: all 0.5s;
 }
 
 
@@ -124,6 +126,7 @@ img {
     background: #f1faee;
     box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.3);
 }
+
 /* Navbar */
 .navbar {
 background: transparent; 
@@ -266,13 +269,14 @@ position: relative;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     background: (--primary-color);
-    padding: 1rem 0 4rem;
+    padding: 2rem 0 4rem;
 }
 
 
 
-.project-cards img {
-    width: 300px;
+.project-cards  img {
+   width: 100%;
+   height: 350px;
     margin-top: 1rem;
     
 }
@@ -282,9 +286,6 @@ position: relative;
     font-weight: 700;
     margin: 1rem 0;
 }
-.project-cards .btn{
-    margin-bottom: 0.5rem;
-}
 .project-cards p {
     font-size: 1.1rem;
     margin-bottom: 2rem;
@@ -292,7 +293,12 @@ position: relative;
     font-weight: 500;
     text-align: center;
 }
-  
+.project-cards .btn{
+    display: inline;
+    margin-block-start: auto;
+}
+    
+
 .project-cards img:hover {
     transition-duration: 0.8s;
     transform: scale(1.1);
@@ -380,6 +386,7 @@ position: relative;
 
 .social a:hover, .footer a:hover {
     color: var(--secondary-color);
+    transition: all 0.5s;
 }
 
 .social p {
@@ -406,15 +413,22 @@ position: relative;
     align-items: center;
 }
 
-.footer ul {
+.footer ul{
     display: flex;
     justify-content: center;
     gap: 1rem;
     margin: 2rem 0;
 }
 
+.footer ul li i {
+   
+    margin-right: 5px;
+}
 
-
+.footer ul li:hover{
+    color: var(--secondary-color);
+    transition: all 0.5s;
+}
 
 
 
@@ -425,10 +439,12 @@ position: relative;
     color: #fff;
     height: 250px;
     padding-top: 8rem;
+    position: relative;
 }
 
 .inner-header  h1{
     font-size: 2.5rem;
+    color: var(--dark-color);
     font-weight: 700;
     margin-bottom: 1rem;
 }
@@ -456,7 +472,7 @@ position: relative;
   .contact-form .btn {
     display: block;
     width: 100%;
-    padding: 0.7rem 12.5rem;
+   
     font-size: inherit;
     font-family: inherit;
     margin: 0 auto;
@@ -507,9 +523,7 @@ position: relative;
      }
       
       
-     .project-cards .container{
-       grid-template-columns: 1fr;
-     }
+     
      .footer-flex {
         flex-direction: column;
     text-align: center;
@@ -601,10 +615,14 @@ position: relative;
     text-align: center;
 
     }
+    .footer-flex ul li i {
+        flex-direction: column;
+    text-align: center;
 
-   
-    
+    }
+
 }
+    
 
 @media (max-width: 576px) {
      
