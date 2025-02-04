@@ -4,9 +4,19 @@ document.addEventListener('DOMContentLoaded', function () {
     const mobileMenu = document.querySelector('.navbar .mobile-menu-items');
 
     toggleButton.addEventListener('click', function () {
+
         mobileMenu.classList.toggle('active');
+        
+    
     });
-});
+    mobileMenu.addEventListener('click', function () {
+
+        mobileMenu.classList.toggle('active');
+    
+    });
+    
+  });
+
 
 // Change Navbar backgropund on scroll
 window.addEventListener('scroll', function() {

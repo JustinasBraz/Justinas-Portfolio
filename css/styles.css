@@ -211,7 +211,11 @@ transition: background-color 0.3s ease-in-out;
     gap: 2rem;
     font-size: 1.rem;
 }
+.navbar .mobile-menu-items a{
+    color: #fff;
+    
 
+}
 
 
 
